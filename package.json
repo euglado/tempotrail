@@ -1,0 +1,28 @@
+{
+  "name": "tempotrail",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Preview and share musical tempo practice ladders in Discord.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "register": "node dist/register.js",
+    "start": "node dist/main.js",
+    "build": "tsc -p tsconfig.json",
+    "lint": "biome check .",
+    "test": "node --test test/*.test.mjs",
+    "check": "npm run lint && npm run build && npm test && node scripts/check-supply.mjs"
+  },
+  "dependencies": {
+    "discord.js": "14.27.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "24.19.2",
+    "typescript": "7.0.2"
+  }
+}

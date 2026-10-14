@@ -1,0 +1,7 @@
+# Contributing / Katkı
+
+Discuss larger changes in an issue first. Use Node.js 24, `npm ci --ignore-scripts`, `npm run check` and `npm audit --audit-level=low`. Format with `npm exec biome check -- --write .`. Add behavioral tests for arithmetic, permission changes, expiry and concurrent interactions when changing those behaviors. Never commit credentials or actual member data. / Büyük değişiklikleri önce issue içinde konuşun. Yukarıdaki komutları Node.js 24 ile çalıştırın; davranış değişikliklerinde hesaplama, izin, süre dolumu ve eşzamanlılık testleri ekleyin. Gizli bilgi veya gerçek üye verisi göndermeyin.
+
+Preserve private previews, explicit share consent, bilingual guidance, bounded state, no privileged intents and minimal permissions. Keep both README language sections in sync. No audio scraping, copyrighted downloads or automated user profiling. Dependencies need a compatible license, registry origin and lockfile integrity. / Özel önizlemeyi, açık paylaşım onayını, iki dili, sınırlı belleği ve en az izni koruyun. İki README bölümünü birlikte güncelleyin. Ses kazıma, izinsiz indirme veya kullanıcı profilleme eklemeyin.
+
+Open a PR with what changes, why and actual checks run. Contributions are distributed under MIT. No contributor origin or authorship assertions are required. / PR açıklamasında değişikliği, gerekçeyi ve gerçek kontrol sonuçlarını yazın. Katkılar MIT kapsamındadır.
